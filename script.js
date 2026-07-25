@@ -152,12 +152,6 @@ document.getElementById('contactForm').addEventListener('submit', function(e){
   this.reset();
 });
 
-/* ---------- Resume download button (placeholder guard) ---------- */
-document.getElementById('resumeBtn').addEventListener('click', function(e){
-  e.preventDefault();
-  alert('Add your resume PDF to the project folder and update the href/download attributes on this button to enable downloading.');
-});
-
 /* ---------- Back to top ---------- */
 document.getElementById('backTop').addEventListener('click', ()=>{
   window.scrollTo({top:0, behavior:'smooth'});
