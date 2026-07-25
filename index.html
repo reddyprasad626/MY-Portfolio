@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Reddy Prasad</title>
+<meta name="description" content="Portfolio of Reddy Prasad — MCA student, aspiring full stack developer. Projects, skills, certifications and achievements." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="dark">
+
+<!-- Loader -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-mark"><span>&lt;</span><span id="loaderText">portfolio</span><span>/&gt;</span></div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<div class="bg-orbs" aria-hidden="true">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<div id="scroll-progress"></div>
+<div class="scrim" id="scrim"></div>
+
+<!-- NAVBAR -->
+<header id="header">
+  <div class="nav-wrap">
+    <a href="#home" class="logo"><span class="brack">&lt;</span>Rohan<span class="brack">/&gt;</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certs</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#journey">Journey</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode">
+        <i class="fa-solid fa-moon" id="themeIcon"></i>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile nav -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#education">Education</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#certifications">Certifications</a>
+  <a href="#achievements">Achievements</a>
+  <a href="#journey">Learning Journey</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero-grid">
+    <div class="hero-eyebrow"><span class="dot-live"></span> AVAILABLE FOR INTERNSHIPS</div>
+
+    <div class="profile-photo-wrap">
+      <div class="photo-glow" aria-hidden="true"></div>
+      <div class="photo-ring" aria-hidden="true"></div>
+      <img class="profile-photo" src="profile.jpg" alt="Reddy Prasad"
+           onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+      <div class="profile-fallback">RV</div>
+      <div class="floaters" aria-hidden="true">
+        <i class="fa-brands fa-react" style="font-size:1.6rem;animation-delay:0s;"></i>
+        <i class="fa-brands fa-python" style="font-size:1.4rem;animation-delay:1.2s;"></i>
+        <i class="fa-brands fa-js" style="font-size:1.3rem;animation-delay:2.1s;"></i>
+        <i class="fa-solid fa-database" style="font-size:1.2rem;animation-delay:3s;"></i>
+      </div>
+    </div>
+
+    <h1>Hi, I'm <span class="gradient-text">Reddy Prasad</span></h1>
+    <div class="hero-role"><span id="typedRole"></span><span class="cursor">|</span></div>
+    <p class="hero-intro">who loves turning ideas into working software. Currently pursuing my MCA, I spend my time building UI/UX designs.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary"><i class="fa-solid fa-diagram-project"></i> View Projects</a>
+      <a href="ReddyPrasad.pdf" class="btn btn-ghost" id="resumeBtn" download="ReddyPrasad.pdf"><i class="fa-solid fa-download"></i> Download Resume</a>
+      <a href="#contact" class="btn btn-ghost"><i class="fa-regular fa-paper-plane"></i> Contact Me</a>
+    </div>
+    <div class="hero-socials">
+      <a class="social-ic" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+      <a class="social-ic" href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a class="social-ic" href="mailto:rohan.verma@example.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+    </div>
+  </div>
+
+
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section id="about">
+  <div class="eyebrow reveal">01 · About</div>
+  <h2 class="sec-title reveal">Getting to know <span class="gradient-text">me</span></h2>
+  <p class="sec-sub reveal">A quick look at who I am, what I study, and what keeps me up late writing code.</p>
+
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm a Master of Computer Applications student with a strong pull toward <strong>full-stack development</strong>. I enjoy the full journey of a product — from sketching a UI to shipping a working backend that talks to it.</p>
+      <p>My career objective is simple: join a team where I can contribute real, useful code from day one while continuing to learn from engineers better than me. I want to grow into a developer who's equally comfortable in the browser console and the database schema.</p>
+      <p>Outside of coursework, I explore <strong>AI</strong>, poke around <strong>data analytics</strong> notebooks, and enjoy the specific satisfaction of untangling a stubborn bug at 1 a.m.</p>
+
+      <div class="interest-pills">
+        <span class="pill"><i class="fa-solid fa-code"></i> Web Development</span>
+        <span class="pill"><i class="fa-solid fa-brain"></i> Artificial Intelligence</span>
+        <span class="pill"><i class="fa-solid fa-chart-line"></i> Data Analytics</span>
+        <span class="pill"><i class="fa-solid fa-puzzle-piece"></i> Problem Solving</span>
+      </div>
+    </div>
+
+    <div class="about-side">
+      <div class="glass objective-card reveal reveal-delay-1">
+        <i class="fa-solid fa-quote-left quote-ic"></i>
+        <p>"Write code today that your future self — and your teammates — will thank you for."</p>
+      </div>
+      <div class="info-cards">
+        <div class="glass info-card reveal reveal-delay-1"><div class="lbl">Degree</div><div class="val">MCA (2024–2026)</div></div>
+        <div class="glass info-card reveal reveal-delay-2"><div class="lbl">Location</div><div class="val">Hyderabad, India</div></div>
+        <div class="glass info-card reveal reveal-delay-2"><div class="lbl">Focus</div><div class="val">Full Stack Dev</div></div>
+        <div class="glass info-card reveal reveal-delay-3"><div class="lbl">Status</div><div class="val">Open to Internships</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section id="education">
+  <div class="eyebrow reveal">02 · Education</div>
+  <h2 class="sec-title reveal">Academic <span class="gradient-text">timeline</span></h2>
+  <p class="sec-sub reveal">Where I've studied, and how it's shaped the way I build.</p>
+
+  <div class="timeline">
+    <div class="tl-item reveal">
+      <div class="tl-dot"></div>
+      <div class="glass tl-card">
+        <div class="tl-top"><span class="tl-degree">Master of Computer Applications (MCA)</span><span class="tl-year">2024 – 2026</span></div>
+        <div class="tl-inst">Osmania University, Hyderabad</div>
+        <span class="tl-score">CGPA: 8.7 / 10</span>
+      </div>
+    </div>
+    <div class="tl-item reveal reveal-delay-1">
+      <div class="tl-dot"></div>
+      <div class="glass tl-card">
+        <div class="tl-top"><span class="tl-degree">B.Sc. Computer Science</span><span class="tl-year">2021 – 2024</span></div>
+        <div class="tl-inst">St. Francis Degree College, Hyderabad</div>
+        <span class="tl-score">CGPA: 8.4 / 10</span>
+      </div>
+    </div>
+    <div class="tl-item reveal reveal-delay-2">
+      <div class="tl-dot"></div>
+      <div class="glass tl-card">
+        <div class="tl-top"><span class="tl-degree">Intermediate (MPC)</span><span class="tl-year">2019 – 2021</span></div>
+        <div class="tl-inst">Sri Chaitanya Junior College</div>
+        <span class="tl-score">91.2%</span>
+      </div>
+    </div>
+    <div class="tl-item reveal reveal-delay-3">
+      <div class="tl-dot"></div>
+      <div class="glass tl-card">
+        <div class="tl-top"><span class="tl-degree">SSC</span><span class="tl-year">2018 – 2019</span></div>
+        <div class="tl-inst">Bhashyam High School</div>
+        <span class="tl-score">94.6%</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section id="skills">
+  <div class="eyebrow reveal">03 · Skills</div>
+  <h2 class="sec-title reveal">Tools I <span class="gradient-text">build with</span></h2>
+  <p class="sec-sub reveal">A snapshot of my current technical toolkit — always a work in progress.</p>
+
+  <div class="skills-grid" id="skillsGrid">
+    <!-- injected by JS -->
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section id="projects">
+  <div class="eyebrow reveal">04 · Projects</div>
+  <h2 class="sec-title reveal">Academic <span class="gradient-text">projects</span></h2>
+  <p class="sec-sub reveal">Things I've built to learn, break, fix, and learn again.</p>
+
+  <div class="projects-grid">
+    <div class="glass proj-card reveal">
+      <div class="proj-cover" style="--proj-c1:#3B82F6;--proj-c2:#06B6D4;"><i class="fa-solid fa-cart-shopping"></i></div>
+      <div class="proj-body">
+        <div class="proj-title">CampusCart — E-commerce Platform</div>
+        <p class="proj-desc">A full-stack shopping platform with cart, checkout, and an admin dashboard for managing inventory and orders in real time.</p>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span><span class="tech-tag">Tailwind</span></div>
+        <div class="proj-actions">
+          <a href="#" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass proj-card reveal reveal-delay-1">
+      <div class="proj-cover" style="--proj-c1:#8B5CF6;--proj-c2:#3B82F6;"><i class="fa-solid fa-comments"></i></div>
+      <div class="proj-body">
+        <div class="proj-title">StudyBuddy — Real-time Chat App</div>
+        <p class="proj-desc">A websocket-based chat app for study groups with rooms, typing indicators, and message history persistence.</p>
+        <div class="tech-tags"><span class="tech-tag">JavaScript</span><span class="tech-tag">Socket.io</span><span class="tech-tag">Express</span><span class="tech-tag">SQL</span></div>
+        <div class="proj-actions">
+          <a href="#" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass proj-card reveal reveal-delay-2">
+      <div class="proj-cover" style="--proj-c1:#06B6D4;--proj-c2:#8B5CF6;"><i class="fa-solid fa-chart-pie"></i></div>
+      <div class="proj-body">
+        <div class="proj-title">InsightBoard — Data Analytics Dashboard</div>
+        <p class="proj-desc">An interactive dashboard that visualizes CSV datasets with filters, trend lines, and exportable summary reports.</p>
+        <div class="tech-tags"><span class="tech-tag">Python</span><span class="tech-tag">Pandas</span><span class="tech-tag">React</span><span class="tech-tag">Chart.js</span></div>
+        <div class="proj-actions">
+          <a href="#" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="glass proj-card reveal reveal-delay-3">
+      <div class="proj-cover" style="--proj-c1:#3B82F6;--proj-c2:#8B5CF6;"><i class="fa-solid fa-list-check"></i></div>
+      <div class="proj-body">
+        <div class="proj-title">TaskFlow — Team Task Manager</div>
+        <p class="proj-desc">A kanban-style task manager with drag-and-drop boards, role-based access, and deadline reminders.</p>
+        <div class="tech-tags"><span class="tech-tag">React</span><span class="tech-tag">Java</span><span class="tech-tag">Spring Boot</span><span class="tech-tag">MySQL</span></div>
+        <div class="proj-actions">
+          <a href="#" class="btn btn-ghost btn-sm"><i class="fa-brands fa-github"></i> GitHub</a>
+          <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section id="certifications">
+  <div class="eyebrow reveal">05 · Certifications</div>
+  <h2 class="sec-title reveal">Verified <span class="gradient-text">learning</span></h2>
+  <p class="sec-sub reveal">Courses and certifications I've completed along the way.</p>
+
+  <div class="cert-grid">
+    <div class="glass cert-card reveal"><div class="cert-ic"><i class="fa-brands fa-python"></i></div><div class="cert-name">Python Programming</div><div class="cert-issuer">Coursera</div></div>
+    <div class="glass cert-card reveal reveal-delay-1"><div class="cert-ic"><i class="fa-brands fa-java"></i></div><div class="cert-name">Java Fundamentals</div><div class="cert-issuer">Oracle Academy</div></div>
+    <div class="glass cert-card reveal reveal-delay-2"><div class="cert-ic"><i class="fa-solid fa-globe"></i></div><div class="cert-name">Web Development</div><div class="cert-issuer">freeCodeCamp</div></div>
+    <div class="glass cert-card reveal reveal-delay-3"><div class="cert-ic"><i class="fa-solid fa-database"></i></div><div class="cert-name">SQL for Data Science</div><div class="cert-issuer">Coursera</div></div>
+    <div class="glass cert-card reveal"><div class="cert-ic"><i class="fa-solid fa-robot"></i></div><div class="cert-name">Machine Learning Basics</div><div class="cert-issuer">Google</div></div>
+    <div class="glass cert-card reveal reveal-delay-1"><div class="cert-ic"><i class="fa-solid fa-chart-simple"></i></div><div class="cert-name">Data Analytics</div><div class="cert-issuer">IBM SkillsBuild</div></div>
+  </div>
+</section>
+
+<!-- ============ ACHIEVEMENTS ============ -->
+<section id="achievements">
+  <div class="eyebrow reveal">06 · Achievements</div>
+  <h2 class="sec-title reveal">Milestones &amp; <span class="gradient-text">recognition</span></h2>
+  <p class="sec-sub reveal">Moments where curiosity turned into results.</p>
+
+  <div class="ach-grid">
+    <div class="glass ach-card reveal">
+      <div class="ach-ic"><i class="fa-solid fa-trophy"></i></div>
+      <div><div class="ach-title">2nd Place — Inter-College Hackathon</div><div class="ach-desc">Built a working prototype for a campus resource-sharing app in 24 hours with a 3-member team.</div></div>
+    </div>
+    <div class="glass ach-card reveal reveal-delay-1">
+      <div class="ach-ic"><i class="fa-solid fa-code"></i></div>
+      <div><div class="ach-title">Top 50 — State-level Coding Contest</div><div class="ach-desc">Ranked in the top 50 out of 2,000+ participants in a competitive programming contest.</div></div>
+    </div>
+    <div class="glass ach-card reveal reveal-delay-2">
+      <div class="ach-ic"><i class="fa-solid fa-people-group"></i></div>
+      <div><div class="ach-title">Organized a Web Dev Workshop</div><div class="ach-desc">Led a hands-on workshop for 40+ juniors covering HTML, CSS, and JavaScript basics.</div></div>
+    </div>
+    <div class="glass ach-card reveal reveal-delay-3">
+      <div class="ach-ic"><i class="fa-solid fa-microphone"></i></div>
+      <div><div class="ach-title">Speaker — Campus Tech Seminar</div><div class="ach-desc">Presented a session on "Getting Started with Full Stack Development" to first-year students.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEARNING JOURNEY ============ -->
+<section id="journey">
+  <div class="eyebrow reveal">07 · Roadmap</div>
+  <h2 class="sec-title reveal">Currently <span class="gradient-text">learning</span></h2>
+  <p class="sec-sub reveal">The next set of tools I'm actively leveling up in.</p>
+
+  <div class="journey-track">
+    <div class="journey-step reveal">
+      <div class="glass journey-card">
+        <div class="journey-ic"><i class="fa-brands fa-react"></i></div>
+        <div class="journey-name">React (Advanced)</div>
+        <div class="journey-bar"><span style="width:75%"></span></div>
+      </div>
+    </div>
+    <div class="journey-step reveal reveal-delay-1">
+      <div class="glass journey-card">
+        <div class="journey-ic"><i class="fa-brands fa-node-js"></i></div>
+        <div class="journey-name">Node.js</div>
+        <div class="journey-bar"><span style="width:65%"></span></div>
+      </div>
+    </div>
+    <div class="journey-step reveal reveal-delay-2">
+      <div class="glass journey-card">
+        <div class="journey-ic"><i class="fa-solid fa-leaf"></i></div>
+        <div class="journey-name">MongoDB</div>
+        <div class="journey-bar"><span style="width:55%"></span></div>
+      </div>
+    </div>
+    <div class="journey-step reveal reveal-delay-3">
+      <div class="glass journey-card">
+        <div class="journey-ic"><i class="fa-solid fa-brain"></i></div>
+        <div class="journey-name">Artificial Intelligence</div>
+        <div class="journey-bar"><span style="width:40%"></span></div>
+      </div>
+    </div>
+    <div class="journey-step reveal reveal-delay-4">
+      <div class="glass journey-card">
+        <div class="journey-ic"><i class="fa-solid fa-cloud"></i></div>
+        <div class="journey-name">Cloud Computing</div>
+        <div class="journey-bar"><span style="width:30%"></span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact">
+  <div class="eyebrow reveal">08 · Contact</div>
+  <h2 class="sec-title reveal">Let's <span class="gradient-text">build something</span></h2>
+  <p class="sec-sub reveal">Open to internships, placements, and entry-level developer roles. Reach out — I reply fast.</p>
+
+  <div class="contact-grid">
+    <div class="glass contact-info-card reveal">
+      <div class="contact-row"><div class="cic"><i class="fa-regular fa-envelope"></i></div><div><div class="clbl">Email</div><div class="cval">rohan.verma@example.com</div></div></div>
+      <div class="contact-row"><div class="cic"><i class="fa-solid fa-phone"></i></div><div><div class="clbl">Phone</div><div class="cval">+91 98765 43210</div></div></div>
+      <div class="contact-row"><div class="cic"><i class="fa-solid fa-location-dot"></i></div><div><div class="clbl">Location</div><div class="cval">Hyderabad, India</div></div></div>
+      <div class="contact-row"><div class="cic"><i class="fa-brands fa-linkedin-in"></i></div><div><div class="clbl">LinkedIn</div><div class="cval">/in/rohanverma</div></div></div>
+      <div class="contact-row"><div class="cic"><i class="fa-brands fa-github"></i></div><div><div class="clbl">GitHub</div><div class="cval">/rohanverma</div></div></div>
+    </div>
+
+    <form class="glass form-card reveal reveal-delay-1" id="contactForm">
+      <div class="field"><label for="cname">Name</label><input id="cname" type="text" placeholder="Your full name" required></div>
+      <div class="field"><label for="cemail">Email</label><input id="cemail" type="email" placeholder="you@example.com" required></div>
+      <div class="field"><label for="cmessage">Message</label><textarea id="cmessage" placeholder="Tell me about the opportunity or just say hi..." required></textarea></div>
+      <button type="submit" class="btn btn-primary"><i class="fa-regular fa-paper-plane"></i> Send Message</button>
+      <div class="form-msg" id="formMsg" role="status"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo"><span class="brack">&lt;</span>Rohan<span class="brack">/&gt;</span></a>
+        <p>MCA student and aspiring full stack developer, building clean, purposeful software one project at a time.</p>
+        <div class="footer-socials">
+          <a class="social-ic" href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a class="social-ic" href="https://linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a class="social-ic" href="mailto:rohan.verma@example.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-links">
+        <h4>Explore</h4>
+        <a href="#education">Education</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#journey">Learning Journey</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Rohan Verma. All rights reserved.</span>
+      <button id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
